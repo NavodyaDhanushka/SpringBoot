@@ -15,7 +15,7 @@ public class CustomerController {
     @Autowired
     private CustomerRepository customerRepository;
 
-    @PostMapping("/newcustomer")
+    @PostMapping("/addcustomer")
     public Customer saveCustomer(@RequestBody Customer customer) {
         return customerRepository.save(customer);
     }

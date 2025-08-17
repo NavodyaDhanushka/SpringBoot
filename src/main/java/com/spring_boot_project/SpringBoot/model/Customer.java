@@ -16,6 +16,14 @@ public class Customer {
     private String contactNo;
     private String address;
 
+    public Customer(String Id) {
+        this.id = Integer.parseInt(Id);
+    }
+
+    public Customer() {
+
+    }
+
     public int getId() {
         return id;
     }
